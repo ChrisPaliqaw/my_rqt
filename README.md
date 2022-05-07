@@ -1,5 +1,7 @@
 # my_rqt
 
+### Rubric
+
 This class demonstrates the use of the QT widget framework to display the log messages of a simple ROS2-like Node logging system.
 
 Rubric items
@@ -20,7 +22,14 @@ State is accessed via member functions: for instance, _logger is a private membe
 Abstract classes are composed of pure virtual functions. Override functions are specified: mainwindow inherits from both QMainWindow
 and the abstract class Subscriber.
 11. One member function in an inherited class overrides a virtual base class member function: see 10
-12. 
+12.  One function is declared with a template that allows it to accept a generic parameter: Logger::Log accepts a generic parameter
+13.  At least two variables are defined as references, or two functions use pass-by-reference in the project code: in Logger::Log,
+subscribers are looped using a const reference: all messages are passed as const lvalue references.
+14. At least one class that uses unmanaged dynamically allocated memory, along with any class that otherwise needs to modify state upon the termination of an object, uses a destructor: mainwindow uses old-style memory management uses a constructor and destructor
+15. The project follows the Resource Acquisition Is Initialization pattern where appropriate, by allocating objects at compile-time, initializing objects when they are declared, and utilizing scope to ensure their automatic destruction: Logger's list of subscribers
+uses RAII for its deque of shared_ptr<Subscriber>
+  
+### Build and run instructions
 
 Install qt
 ```
