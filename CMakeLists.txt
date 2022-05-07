@@ -20,6 +20,14 @@ set(PROJECT_SOURCES
         mainwindow.h
         mainwindow.ui
         textfinder.qrc
+        Logger.cpp
+        Logger.h
+        Node.cpp
+        Node.h
+        Subscriber.cpp
+        Subscriber.h
+        StdOutSubscriber.cpp
+        StdOutSubscriber.h
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
