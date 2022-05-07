@@ -32,6 +32,7 @@ void MainWindow::Receive(const string message)
 
 void MainWindow::loadTextFile()
 {
+    _node.LogDebug("We're loading a text file, but it's just a debug message, so we'll ignore it");
     QFile inputFile(":/input.txt");
     inputFile.open(QIODevice::ReadOnly);
 
