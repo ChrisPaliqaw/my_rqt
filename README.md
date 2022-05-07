@@ -1,10 +1,15 @@
 # my_rqt
 
-### Rubric
+### Code structure
 
 This class demonstrates the use of the QT widget framework to display the log messages of a simple ROS2-like Node logging system.
 
-Rubric items
+mainwindow and main are the QT code, which in turn call the ROS2-like classes. Node is the heart of a skeleton code implement for
+implementing behavior, but the only behavior it simulates from ROS2 is a simple logging system, with 5 levels of severity.
+
+The app loads and searches a text file, and issue a log message when it is searched
+
+### Rubric items
 
 1. A variety of control structures are used in the project: switch (on an enum class), for, if
 2. The project code is clearly organized into functions: see project
