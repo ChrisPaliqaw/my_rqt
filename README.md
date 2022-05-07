@@ -2,12 +2,14 @@
 
 ### Code structure
 
-This class demonstrates the use of the QT widget framework to display the log messages of a simple ROS2-like Node logging system.
+This class demonstrates the use of the QT widget framework to display the log messages of a simple ROS2-like Node logging system. QT 
+is important for ROS development, since it is the standard UI framework used for utilities such as rqt_console and rqt_tf_tree,
+though web utilities are growing in importance.
 
 mainwindow and main are the QT code, which in turn call the ROS2-like classes. Node is the heart of a skeleton code implement for
 implementing behavior, but the only behavior it simulates from ROS2 is a simple logging system, with 5 levels of severity.
 
-The app loads and searches a text file, and issue a log message when it is searched
+The app loads and searches a text file, and issues a log message when it is searched. 
 
 ### Rubric items
 
