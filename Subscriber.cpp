@@ -3,3 +3,5 @@
 //
 
 #include "Subscriber.h"
+
+// See header file for full implementation

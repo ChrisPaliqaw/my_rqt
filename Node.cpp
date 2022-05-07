@@ -7,10 +7,12 @@
 
 using std::string;
 
+// A class representing robot behavior
 Node::Node(string name, const LogSeverity log_severity): name(name) {
     _logger = std::make_shared<Logger>(log_severity);
 }
 
+// A collection of convenience methods for logging messages
 void Node::LogDebug(const string message)
 {
     _logger->Log(name + ": " + message, LogSeverity::debug);

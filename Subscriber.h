@@ -7,6 +7,7 @@
 
 #include <string>
 
+// An abstract class for delegates that wish to handle logger messages
 class Subscriber {
 public:
     virtual void Receive(const std::string message) = 0;

@@ -8,6 +8,7 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
+// Main window for QT widget GUI
 class MainWindow : public QMainWindow, Subscriber
 {
     Q_OBJECT
