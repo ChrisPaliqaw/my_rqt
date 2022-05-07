@@ -3,6 +3,7 @@
 //
 
 #include <iostream>
+#include <memory>
 #include "Logger.h"
 #include "StdOutSubscriber.h"
 

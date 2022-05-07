@@ -51,6 +51,6 @@ void MainWindow::on_findButton_clicked()
 {
     QString searchString = ui->lineEdit->text();
     ui->textEdit->find(searchString, QTextDocument::FindWholeWords);
-    _node.LogInfo("Clicked search");
+    _node.LogInfo("Clicked find button");
 }
 
